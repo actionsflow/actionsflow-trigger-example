@@ -31,14 +31,14 @@
     "url": "https://github.com/actionsflow/actionsflow-trigger-example/issues"
   },
   "dependencies": {
-    "actionsflow-core": "^1.0.0-alpha.1"
+    "actionsflow-core": "^1.0.0"
   },
   "devDependencies": {
     "@types/jest": "^26.0.14",
     "jest": "^26.4.2",
     "prettier": "^2.1.2",
     "rimraf": "^3.0.2",
-    "ts-jest": "^26.4.0",
+    "ts-jest": "^26.4.1",
     "typescript": "^4.0.3"
   }
 }
