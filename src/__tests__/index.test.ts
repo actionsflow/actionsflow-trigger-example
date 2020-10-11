@@ -4,9 +4,6 @@ import { getTriggerConstructorParams } from "actionsflow-core";
 
 test("test trigger run", async () => {
   const triggerConstructorParams = await getTriggerConstructorParams({
-    options: {
-      param1: "value",
-    },
     name: "example",
     cwd: resolve(__dirname, "fixtures"),
     workflowPath: resolve(__dirname, "fixtures/workflows/workflow.yml"),
