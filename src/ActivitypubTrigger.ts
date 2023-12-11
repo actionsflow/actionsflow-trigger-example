@@ -1,6 +1,7 @@
 import { Trigger } from "./sanity";
 import { Post } from "./Post";
 import { ActivityPub, WebFinger } from "./activitypub";
+import { htmlToText } from "html-to-text";
 
 type Minutes = number;
 
@@ -28,9 +29,10 @@ export default class ActivityPubTrigger extends Trigger<Post> {
         .filter((activity) => activity.object.type == "Note")
         .filter((activity) => activity.published > cutoff);
 
-      const posts = notes!.map(
-        (activity) => new Post(activity.id, activity.object.contentMap.en)
-      );
+      const posts = notes!.map((activity) => {
+        const text = htmlToText(activity.object.contentMap.en)
+        return new Post(activity.id, text)
+      });
 
       return posts;
     }

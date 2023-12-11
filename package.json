@@ -31,7 +31,9 @@
     "url": "https://github.com/rg-wood/actionsflow-trigger-activitypub/issues/new"
   },
   "dependencies": {
+    "@types/html-to-text": "^9.0.4",
     "actionsflow-core": "^1.5.4",
+    "html-to-text": "^9.0.5",
     "typed-rest-client": "^1.8.11"
   },
   "devDependencies": {
