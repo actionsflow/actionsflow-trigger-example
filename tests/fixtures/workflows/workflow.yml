@@ -1,6 +1,8 @@
 on:
-  example:
-    param1: value
+  activitypub:
+    host: toot.io
+    user: grislyeye
+
 jobs:
   print:
     name: Print

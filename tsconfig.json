@@ -1,5 +1,5 @@
 {
-  "include": ["src", "types"],
+  "include": ["src", "tests", "types"],
   "compilerOptions": {
     "rootDir": ".",
     "outDir": "dist",
