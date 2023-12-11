@@ -1,7 +1,7 @@
 on:
   activitypub:
     host: toot.io
-    user: grislyeye
+    user: testgrislyeye
 
 jobs:
   print:
@@ -10,6 +10,6 @@ jobs:
     steps:
       - name: Print Outputs
         env:
-          title: ${{on.example.outputs.title}}
+          key: ${{on.activitypub.outputs.key}}
         run: |
-          echo title: $title
+          echo key: $key

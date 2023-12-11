@@ -10,7 +10,7 @@
   "author": "Ric Wood <theowenyoung@gmail.com>",
   "homepage": "https://github.com/actionsflow/actionsflow-trigger-example",
   "license": "MIT",
-  "main": "dist/src/ActivityPub.js",
+  "main": "dist/src/ActivityPubTrigger.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/actionsflow/actionsflow-trigger-example.git"
@@ -28,7 +28,7 @@
     "access": "public"
   },
   "bugs": {
-    "url": "https://github.com/actionsflow/actionsflow-trigger-example/issues"
+    "url": "https://github.com/rg-wood/actionsflow-trigger-activitypub/issues/new"
   },
   "dependencies": {
     "actionsflow-core": "^1.5.4",

@@ -13,6 +13,6 @@ describe('ActivityPubTrigger', () => {
     const trigger = new ActivityPubTrigger(parameters);
     const result = await trigger.run();
 
-    expect(result.length).toBe(16);
+    expect(result.length).toBe(1);
   });
 });

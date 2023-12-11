@@ -1,3 +1,3 @@
 export interface Actor {
-  outbox: string;
+  readonly outbox: string;
 }

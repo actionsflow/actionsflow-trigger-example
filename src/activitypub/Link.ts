@@ -1,5 +1,5 @@
-interface Link {
-  rel: string;
-  type?: string;
-  href?: string;
+export interface Link {
+  readonly rel: string;
+  readonly type?: string;
+  readonly href?: string;
 }

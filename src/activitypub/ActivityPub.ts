@@ -1,7 +1,7 @@
 import { Account } from "./Account";
 import { Actor } from "./Actor";
 import { Activity } from "./Activity";
-import { Outbox } from "./Outbox";
+import * as Outbox from "./Outbox";
 import { HttpClient } from "typed-rest-client/HttpClient";
 
 export class ActivityPub {
@@ -27,7 +27,6 @@ export class ActivityPub {
     const uri = `${actor.outbox}?page=true`;
     const response = await ActivityPub.http.get(uri, ActivityPub.accept);
     const body = await response.readBody();
-    const outbox: Outbox = JSON.parse(body);
-    return outbox.orderedItems;
+    return Outbox.fromJson(body);
   }
 }
